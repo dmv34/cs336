@@ -1,0 +1,84 @@
+body {
+  font: 24px Helvetica;
+  background: #999;
+}
+#main {
+  min-height: 800px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row;
+}
+#main > article {
+  padding: 5px;
+  border: 1px solid #000;
+  background: #dd8;
+  flex: 3 1 60%;
+  order: 2;
+}
+#main > nav {
+  text-align: right;
+  padding: 5px;
+  border: 1px solid #000;
+  background: #ccf;
+  flex: 1 6 20%;
+  order: 1;
+}
+#main > aside {
+  padding: 5px;
+  border: 1px solid #000;
+  background: #ccf;
+  flex: 1 6 20%;
+  order: 3;
+}
+header {
+  display: block;
+  font-size: 50px;
+  line-height: 100px;
+  padding: 5px;
+  min-height: 100px;
+  border: 1px solid #000;
+  background: #feb;
+}
+footer {
+  display: block;
+  font-size: 12px;
+  padding: 5px;
+  min-height: 100px;
+  border: 1px solid #000;
+  background: #feb;
+}
+/* Too narrow to support three columns */
+@media all and (max-width: 640px) {
+  #main,
+  #page {
+    flex-direction: column;
+  }
+  #main article {
+    order: 2;
+  }
+  #main nav {
+    order: 1;
+  }
+  #main aside {
+    order: 3;
+  }
+  #main nav {
+    text-align: left;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  #main aside {
+    text-align: left;
+    min-height: 50px;
+    max-height: 50px;
+  }
+  footer {
+    min-height: 50px;
+    max-height: 50px;
+  }
+  header {
+    line-height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+  }
+}
