@@ -1,0 +1,4 @@
+/*simple style sheet to make the data appear next to the button*/
+p{
+  display: inline;
+}
