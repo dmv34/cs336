@@ -1,0 +1,16 @@
+a.
+  i.  The UI is composable because you can return a tree of components that you
+      or someone else built. This is a key principle of maintainable frontends
+  ii. JSX is precompiled into plain JavaScript and is generally easier to use
+      than JS.
+  iii.Comments are...
+          loaded through the comment box from the server
+          created from the comment react class
+          saved using the commentForm class.
+  iv. Props are immutable, where as states are mutable.
+      States being mutable means we can implement interactions.
+
+b.
+  i.  Adding and removing comments from comments.json will add and remove
+      comments from the webpage. This happens in two second intervals, when
+      the page gets re-rendered.
