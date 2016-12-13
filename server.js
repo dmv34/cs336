@@ -20,7 +20,7 @@ var MongoClient = require('mongodb').MongoClient;
 var COMMENTS_FILE = path.join(__dirname, 'comments.json');
 var dbConnection;
 var USERNAME = "cs336";
-// var PASSWORD = "bjarne";
+var PASSWORD = "bjarne";
 
 app.set('port', (process.env.PORT || 3000));
 
