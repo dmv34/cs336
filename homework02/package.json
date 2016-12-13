@@ -1,0 +1,21 @@
+{
+  "name": "HomeWork02",
+  "version": "0.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "kill $(pgrep node) ; nodemon --ignore public/ server.js &",
+    "stop": "kill $(pgrep node)"
+  },
+  "author": "petehunt",
+  "engines" : {
+    "node" : "0.12.x"
+  }
+}
