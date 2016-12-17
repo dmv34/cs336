@@ -78,6 +78,7 @@ module.exports = React.createClass({
                         onChange={this.handleTextChange}
                     />
                     <button type="button" onClick={this.handleUpdate}>Update</button>
+                    <button type="button" onClick={this.handleDelete}>Delete</button>
                 </form>
                 <Link to='/'>Cancel</Link>
             </div>
